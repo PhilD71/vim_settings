@@ -13,6 +13,8 @@ DATE=$(date)
 cd "$SCRIPT_DIR"
 # strip out spaces with underscores for date
 _DATE="${DATE// /_}"
+# Delete old vimrc
+find -name 'vimrc_.*' -delete
 # copy it to git repo and commit it in!
 if cp $VIMRC_DIR $SCRIPT_DIR/vimrc_$_DATE; then
     git add .
