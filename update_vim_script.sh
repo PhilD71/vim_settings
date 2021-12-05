@@ -23,4 +23,3 @@ if cp $VIMRC_DIR $SCRIPT_DIR/vimrc_$_DATE; then
 else
     echo "oops... something ain't right"
 fi
-cd "$CURR_DIR"
